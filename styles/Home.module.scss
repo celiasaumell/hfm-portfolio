@@ -1,0 +1,64 @@
+@use "base";
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "section1"
+    "section2"
+    "main"
+    "footer";
+}
+.mobile-nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2.25rem;
+  background-color: base.$color-background;
+  box-shadow:10px 5px 5px red;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.35rem;
+}
+
+.splash {
+  background: base.$color-background-contrast;
+  position: block;
+  padding: 1.25rem 2.25rem;
+}
+
+.splash__img {
+  border-radius: 50%;
+}
+
+.splash__small__title,
+.splash__title,
+.splash__about {
+  margin: 0;
+}
+
+.splash__small__title {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.splash__title {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.splash__about {
+  max-width: 75ch;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  
+}

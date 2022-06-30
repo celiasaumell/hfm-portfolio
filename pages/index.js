@@ -1,6 +1,7 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -11,29 +12,49 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <div className="splash">
-          <Image src="/Mesa_Hidahis.jpg" width={600} height={613} alt="" className="splash__img" />
-          <div className="splash__content">
-            <h1 className="splash__small__title">Hello, my name is</h1>
-            <h1 className="splash__title">Hidahis Mesa</h1>
-            <p className="splash__about">I am doctorate student in policy and leadership studies at Vanderbilt University.</p>
+      <nav className={styles["mobile-nav"]}>
+        <Link href="/">
+          <a className={styles.logo}>Hidahis Mesa</a>
+        </Link>
+        <Image src="/icons8-menu.svg" width={30} height={30} />
+      </nav>
+      <section className={styles.splash}>
+        <Image
+          src="/Mesa_Hidahis.jpg"
+          width={600}
+          height={613}
+          layout="responsive"
+          alt=""
+          className={styles.splash__img}
+        />
+      </section>
+      <section>fdsfsd</section>
+      <main>fdsfds</main>
+      <footer>dfsdfds</footer>
+
+      {/* <main className={styles.main}>
+        <div className={styles.splash}>
+          <div className={styles.splash__column}>
+            <Image
+              src="/Mesa_Hidahis.jpg"
+              width={600}
+              height={613}
+              layout="responsive"
+              alt=""
+              className={styles.splash__img}
+            />
+          </div>
+          <div className={styles.splash__column}>
+            <h1 className={styles.splash__small__title}>Hello, my name is</h1>
+            <h1 className={styles.splash__title}>Hidahis Mesa</h1>
+            <p className={styles.splash__about}>
+              I am doctorate student in policy and leadership studies at
+              Vanderbilt University.
+            </p>
+            <button>Contact Me</button>
           </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      </main> */}
     </div>
   );
 }
