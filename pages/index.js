@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles["mobile-nav"]}>
+      <nav className={styles.nav}>
         <Link href="/">
           <a className={styles.logo}>Hidahis Mesa</a>
         </Link>
@@ -24,37 +24,40 @@ export default function Home() {
           width={600}
           height={613}
           layout="responsive"
-          alt=""
+          alt="A picture of me"
           className={styles.splash__img}
         />
       </section>
-      <section>fdsfsd</section>
-      <main>fdsfds</main>
+      <section className={styles.splash__content}>
+        <h1 className={styles.splash__small__title}>Hello, my name is</h1>
+        <h1 className={styles.splash__title}>Hidahis Mesa</h1>
+        <p className={styles.splash__about}>
+          I am doctorate student in policy and leadership studies at Vanderbilt
+          University.
+        </p>
+        <button className={styles.primary__button}>Contact Me</button>
+      </section>
+      <main>
+        <section className={styles.about}>
+          <h2>About Me</h2>
+          <p>
+            I am a Ph.D. student in the Department of Leadership, Policy, and
+            Organizations at Vanderbilt University’s Peabody College. My
+            research focuses on college access for underrepresented students,
+            community college student success, and pipelines into regional
+            comprehensive universities. Currently, I work with Dr. Adela Soliz
+            and with the Tennessee Post-secondary Evaluation and Analysis
+            Research Lab (TN-PEARL).
+          </p>
+          <p>
+            Prior to entering the Ph.D. program, I worked at San Diego State
+            University as an institutional research analyst. I received a
+            bachelor's degree in Political Science from the University of
+            Florida and a master's degree in Urban
+          </p>
+        </section>
+      </main>
       <footer>dfsdfds</footer>
-
-      {/* <main className={styles.main}>
-        <div className={styles.splash}>
-          <div className={styles.splash__column}>
-            <Image
-              src="/Mesa_Hidahis.jpg"
-              width={600}
-              height={613}
-              layout="responsive"
-              alt=""
-              className={styles.splash__img}
-            />
-          </div>
-          <div className={styles.splash__column}>
-            <h1 className={styles.splash__small__title}>Hello, my name is</h1>
-            <h1 className={styles.splash__title}>Hidahis Mesa</h1>
-            <p className={styles.splash__about}>
-              I am doctorate student in policy and leadership studies at
-              Vanderbilt University.
-            </p>
-            <button>Contact Me</button>
-          </div>
-        </div>
-      </main> */}
     </div>
   );
 }
