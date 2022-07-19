@@ -57,7 +57,6 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em 1em;
-	margin-top: 1em;
 	border-radius: 5px;
 }
 
@@ -79,13 +78,12 @@
 }
 
 @media only screen and (min-width: 720px) {
-	.form div:last-of-type {
+	.form div:last-of-type:not(.alert) {
 		padding-bottom: 0;
 	}
 
 	.form-buttons {
 		align-self: flex-end;
-
 		margin-bottom: 0;
 	}
 

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import useWindowDimensions from "../useWindowDimensions";
 import Link from "next/link";
 import styles from "./Nav.module.css";
 import NavLink from "./NavLink";
@@ -40,7 +40,7 @@ const Nav = () => {
     setTimeout(() => setDisableBtn(false), 300);
   };
 
-  const { width } = useWindowDimensions();
+  const wide = useWindowDimensions(1050);
 
   const pages = [
     { title: "About Me", anchor: "aboutme" },
@@ -59,11 +59,11 @@ const Nav = () => {
             Hidahis Mesa
           </a>
         </Link>
-        {width >= 1050 ? (
+        {wide ? (
           <section className={`bg-neutral-100 ${styles["nav-links"]}`}>
             {pages.map((page, index) => (
               <NavLink
-                key={`${page.title}+${index}`}
+                key={`${page.anchor}${index}`}
                 anchor={page.anchor}
                 title={page.title}
               />
@@ -80,7 +80,8 @@ const Nav = () => {
           ></button>
         )}
       </section>
-      {width < 1050 ? (
+
+      {!wide ? (
         <CSSTransition
           nodeRef={nodeRef}
           in={navIsOpen}
@@ -95,7 +96,7 @@ const Nav = () => {
           >
             {pages.map((page, index) => (
               <NavLink
-                key={`${page.title}+${index}`}
+                key={`mobile-${page.anchor}${index}`}
                 anchor={page.anchor}
                 title={page.title}
                 onClick={handleLink}

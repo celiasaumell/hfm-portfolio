@@ -1,4 +1,4 @@
-export default async function (req, res) {
+export default async function contact(req, res) {
   require("dotenv").config();
 
   const USER = process.env.user;

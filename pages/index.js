@@ -64,7 +64,7 @@ export default function Home() {
           <div className={`${styles.content__divider} bg-neutral-700 `} />
           <p>
             I am a Ph.D. student in the Department of Leadership, Policy, and
-            Organizations at Vanderbilt University’s Peabody College. My
+            Organizations at Vanderbilt University&apos;s Peabody College. My
             research focuses on college access for underrepresented students,
             community college student success, and pipelines into regional
             comprehensive universities. Currently, I work with Dr. Adela Soliz
@@ -74,8 +74,8 @@ export default function Home() {
           <p>
             Prior to entering the Ph.D. program, I worked at San Diego State
             University as an institutional research analyst. I received a
-            bachelor's degree in Political Science from the University of
-            Florida and a master's degree in Urban Education Policy from Brown University. 
+            bachelor&apos;s degree in Political Science from the University of
+            Florida and a master&apos;s degree in Urban Education Policy from Brown University. 
           </p>
         </section>
         <section
