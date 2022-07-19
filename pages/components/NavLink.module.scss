@@ -2,3 +2,26 @@
   .link {
     padding: 2em 0;
   }
+
+  .link:hover {
+    color: var(--color-accent-400);
+
+  }
+
+  @media screen and (orientation: landscape) {
+    .link {
+      padding: 0;
+    }
+  }
+
+
+@media only screen and (min-width: 900px) {
+  .link {
+    padding: .75rem;
+
+  }
+
+  .link:last-of-type {
+    padding-right: 0;
+  }
+}

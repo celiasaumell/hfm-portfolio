@@ -1,0 +1,32 @@
+.primary__button,
+.secondary__button {
+	width: 100%;
+	padding: .90rem;
+	border: 0;
+	border-radius: .25rem;
+	box-shadow: inset 0px -2px 0px var(--color-box-shadow);
+	transition: background-color 300ms ease-in;
+}
+
+.primary__button:hover,
+.secondary__button:hover {
+
+	box-shadow: inset 0px -2px 0px var(--color-box-shadow);
+	transform: scale(1.1);
+	transition: transform 200ms ease-in;
+}
+
+.primary__button:hover {
+	background-color: var(--hover-primary);
+}
+
+.secondary__button:hover {
+	background-color: var(--hover-secondary);
+}
+
+@media only screen and (min-width: 720px) {
+	.primary__button, .secondary__button {
+		width: auto;
+		padding: .75rem 2.5rem;
+	}
+}
