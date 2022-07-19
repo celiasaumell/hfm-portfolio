@@ -1,0 +1,16 @@
+:root {
+	--color-accent-400: #206CDD;
+	--color-accent-500: #0056D7;
+
+	--color-box-shadow: rgba(0, 0, 0, 0.425); 
+
+	--color-neutral-100: #FFF;
+	--color-neutral-200: #F2F2F2;
+	--color-neutral-300: rgb(184, 184, 184);
+	--color-neutral-400: rgb(99, 99, 99);
+	--color-neutral-700: #333333;
+	--color-neutral-900: #1D1D1D; 
+
+	--hover-primary: var(--color-accent-500);
+	--hover-secondary: var(--color-neutral-400);
+}

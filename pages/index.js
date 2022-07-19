@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../public/scss/Home.module.css";
+import styles from "./scss/Home.module.css";
 import Button from "./components/Button";
 import ContactForm from "./components/ContactForm";
 import Nav from "./components/Nav";

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+:root {
+	--ff-primary: 'Rubik', sans-serif;
+	--ff-body: var(--ff-primary);
+	--ff-heading: var(--ff-primary);
+
+	--fw-regular: 400;
+	--fw-semi-bold: 500;
+	--fw-bold: 700;
+	
+	--fs-300: 0.75rem;
+	--fs-400: 1rem;
+	--fs-500: 1.1rem;
+	--fs-600: 1.35rem;
+	--fs-700: 2rem;
+	--fs-800: 2.5rem;
+
+	--fs-body: var(--fs-400);
+	--fs-primary-heading: var(--fs-800);
+	--fs-secondary-heading: var(--fs-700);
+	--fs-smallest-heading: var(--fs-300) ;
+	--fs-nav: var(--fs-600);
+	--fs-button: var(--fs-500);
+}
