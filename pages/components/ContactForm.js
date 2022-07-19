@@ -49,6 +49,7 @@ const ContactForm = (props) => {
       className={`${styles.form} bg-neutral-200`}
       onSubmit={handleSubmit}
     >
+      <h2 className={`${props.styles} text-neutral-900 fw-bold fs-secondary-heading`}>Contact Me</h2>
       <div>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" required />
