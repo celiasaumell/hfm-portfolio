@@ -48,7 +48,11 @@ export default function Home() {
               I am doctorate student in policy and leadership studies at
               Vanderbilt University.
             </p>
-            <Button primary={true} style="bg-accent-400" scrollHandler={scrollHandler}>
+            <Button
+              primary={true}
+              style="bg-accent-400"
+              scrollHandler={scrollHandler}
+            >
               Contact Me
             </Button>
           </section>
@@ -75,7 +79,8 @@ export default function Home() {
             Prior to entering the Ph.D. program, I worked at San Diego State
             University as an institutional research analyst. I received a
             bachelor&apos;s degree in Political Science from the University of
-            Florida and a master&apos;s degree in Urban Education Policy from Brown University. 
+            Florida and a master&apos;s degree in Urban Education Policy from
+            Brown University.
           </p>
         </section>
         <section
@@ -113,16 +118,13 @@ export default function Home() {
           </p>
         </section>
         <section className={`${styles.section} text-neutral-700`} id="contact">
-          <h2
-            className={`${styles.content__title} text-neutral-900 fw-bold fs-secondary-heading`}
-          >
-            Contact Me
-          </h2>
-          <div className={`${styles.content__divider} bg-neutral-700`} />
-          <ContactForm contactRef={contactRef}/>
+          <ContactForm
+            contactRef={contactRef}
+            styles={styles["content__title"]}
+          />
         </section>
       </main>
-      <footer >
+      <footer>
         <h6>Copyright © 2022 Celia Saumell</h6>
       </footer>
     </div>
