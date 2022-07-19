@@ -73,7 +73,7 @@ const ContactForm = (props) => {
         <div className={`${styles.alert} ${styles.success}`}>
           <span>Your message has been submitted!</span>
           <img
-            src="/x-symbol.svg"
+            src="/static/images/x-symbol.svg"
             className={`${styles.close}`}
             onClick={() => setSubmitted(false)}
           ></img>
