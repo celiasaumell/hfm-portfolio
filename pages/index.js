@@ -26,7 +26,7 @@ export default function Home() {
         >
           <section className={`${styles.splash} bg-neutral-200`}>
             <Image
-              src="/Mesa_Hidahis.jpg"
+              src="/images/Mesa_Hidahis.jpg"
               width={600}
               height={613}
               alt="A picture of me"
